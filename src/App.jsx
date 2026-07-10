@@ -7,6 +7,7 @@ import AddHouseboat from './components/AddHouseboat'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ViewHouseboats from './components/ViewHouseboats'
 import SearchHouseboat from './components/SearchHouseboat'
+import DeleteHouseboat from './components/DeleteHouseboat'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,8 @@ function App() {
           <Route path='/' element={<AddHouseboat />} />
           <Route path='/search' element={<SearchHouseboat />} />
           <Route path='/view' element={<ViewHouseboats />} />
+          <Route path='/delete' element={<DeleteHouseboat />} />
+
 
         </Routes>
       </BrowserRouter>
