@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navigation = () => {
     return (
@@ -20,18 +21,18 @@ const Navigation = () => {
                     {/* Navigation Links */}
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-3 mt-3 mt-lg-0">
-                            <a className="nav-link active px-4 py-2 rounded-pill bg-info text-dark fw-bold shadow border border-info hover-bg-light transition-all" aria-current="page" href="/">
+                            <Link className="nav-link active px-4 py-2 rounded-pill bg-info text-dark fw-bold shadow border border-info hover-bg-light transition-all" aria-current="page" to="/">
                                 <i className="bi bi-plus-lg me-1"></i> Add Houseboat
-                            </a>
-                            <a className="nav-link px-3 py-2 text-white-50 fw-medium hover-text-info" href="/view">
+                            </Link>
+                            <Link className="nav-link px-3 py-2 text-white-50 fw-medium hover-text-info" to="/view">
                                 View Houseboats
-                            </a>
-                            <a className="nav-link px-3 py-2 text-white-50 fw-medium hover-text-info" href="/search">
+                            </Link>
+                            <Link className="nav-link px-3 py-2 text-white-50 fw-medium hover-text-info" to="/search">
                                 Search Houseboat
-                            </a>
-                            <a className="nav-link px-3 py-2 text-white-50 fw-medium hover-text-danger" href="/delete">
+                            </Link>
+                            <Link className="nav-link px-3 py-2 text-white-50 fw-medium hover-text-danger" to="/delete">
                                 Remove Houseboat
-                            </a>
+                            </Link>
                             {/* Glowing Sapphire Action Button */}
 
                         </div>
