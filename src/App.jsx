@@ -6,6 +6,7 @@ import './App.css'
 import AddHouseboat from './components/AddHouseboat'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ViewHouseboats from './components/ViewHouseboats'
+import SearchHouseboat from './components/SearchHouseboat'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<AddHouseboat />} />
+          <Route path='/search' element={<SearchHouseboat />} />
           <Route path='/view' element={<ViewHouseboats />} />
 
         </Routes>

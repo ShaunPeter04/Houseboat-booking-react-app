@@ -133,9 +133,9 @@ const ViewHouseboats = () => {
 
                                         <div key={value.boatId} className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
 
-                                            <div className="card" style={{ width: "18rem" }}>
+                                            <div className="card h-100" style={{ width: "18rem", height: "300px" }}>
                                                 <img src={value.image} class="card-img-top" alt="..." />
-                                                <div class="card-body">
+                                                <div class="card-body ">
                                                     <h5 className="card-title">{value.boatName}</h5>
                                                     <p className="card-text">{value.boatId}</p>
                                                     <p className="card-text">{value.category}</p>
