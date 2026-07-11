@@ -43,21 +43,20 @@ const ViewHouseboats = () => {
 
                                     return (
 
-                                        <div key={value.boatId} className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                                        <div key={value.boatId} className="col col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
 
-                                            <div className="card h-100" style={{ width: "18rem", height: "300px" }}>
-                                                <img src={value.image} class="card-img-top" alt="..." />
+                                            <div className="card h-100" style={{ width: "18rem" }}>
+                                                <img src={value.image} class="card-img-top" alt="..." style={{ height: "200px" }} />
                                                 <div class="card-body ">
                                                     <h5 className="card-title">{value.boatName}</h5>
-                                                    <p className="card-text">{value.boatId}</p>
-                                                    <p className="card-text">{value.category}</p>
-                                                    <p className="card-text">{value.bedrooms}</p>
-                                                    <p className="card-text">{value.capacity}</p>
-                                                    <p className="card-text">{value.acType}</p>
-                                                    <p className="card-text">{value.pricePerNight}</p>
-                                                    <p className="card-text">{value.route}</p>
-                                                    <p className="card-text">{value.builtYear}</p>
-                                                    <p className="card-text">{value.description}</p>
+                                                    <h6 className="card-text">Boat ID : {value.boatId}</h6>
+                                                    <h6 className="card-text">Category : {value.category}</h6>
+                                                    <h6 className="card-text">Bedrooms : {value.bedrooms}</h6>
+                                                    <h6 className="card-text">Capacity : {value.capacity}</h6>
+                                                    <h6 className="card-text">AC Type{value.acType}</h6>
+                                                    <h6 className="card-text">Price Per Night : {value.pricePerNight}</h6>
+                                                    <h6 className="card-text">Route : {value.route}</h6>
+                                                    
 
                                                     <a href="#" class="btn btn-primary">More Details</a>
                                                 </div>
